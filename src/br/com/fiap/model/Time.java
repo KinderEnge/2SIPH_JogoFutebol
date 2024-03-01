@@ -20,6 +20,10 @@ public class Time {
 		public void setPontos(int pontos) {
 			this.pontos = pontos;
 		}
+
+		public void adicionarVitoria(){pontos+=3;}
+
+		public void adicionarEmpate(){pontos++;}
 		
 		
 		

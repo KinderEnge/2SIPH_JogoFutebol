@@ -17,16 +17,20 @@ public class Partida {
 		this.golsVisitante = golsVisitante;
 		
 		if(golsCasa>golsVisitante) {
-			int pts = this.casa.getPontos();
-			this.casa.setPontos(pts+3);
+			//int pts = this.casa.getPontos();
+			//this.casa.setPontos(pts+3);
+			this.casa.adicionarVitoria();
 		}else if(golsCasa<golsVisitante){
-			int pts = this.visitante.getPontos();
-			this.visitante.setPontos(pts+3);
+			//int pts = this.visitante.getPontos();
+			//this.visitante.setPontos(pts+3);
+			this.visitante.adicionarVitoria();
 		}else {
-			int ptsC=this.casa.getPontos()+1;
-			int ptsV=this.visitante.getPontos()+1;
-			this.casa.setPontos(ptsC);
-			this.visitante.setPontos(ptsV);
+			//int ptsC=this.casa.getPontos()+1;
+			//int ptsV=this.visitante.getPontos()+1;
+			//this.casa.setPontos(ptsC);
+			//this.visitante.setPontos(ptsV);
+			this.casa.adicionarEmpate();
+			this.visitante.adicionarEmpate();
 		}
 	}
 	
